@@ -1,3 +1,12 @@
+:root {
+    --Light-slate-blue-background: hsl(252, 100%, 67%);
+    --Light-royal-blue-background: hsl(241, 81%, 54%);
+    --Violet-blue-circle: hsla(256, 72%, 46%, 1);
+    --Persian-blue-circle: hsla(241, 72%, 46%, 0);
+}
+  
+
+
 * {
     margin: 0;
     padding: 0;
@@ -7,19 +16,29 @@ body {
     font-family: 'Hanken Grotesk', sans-serif;
     font-size: 18px;
     font-weight: 100 800;
+    display: flex;
+    justify-content: center;
+    align-self: center;
 }
 .result-summary{
     display: grid;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.24);
+    border-radius: 24px;
+    background-color: hsl(0, 0%, 100%);
 }
 
+
 .result { 
-    background-color: hsl(252, 100%, 67%);
+    background: linear-gradient(to bottom,
+    var(--Light-slate-blue-background),
+    var(--Light-royal-blue-background));
     border-radius: 20px;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 30px;
+    padding-bottom: 15px;
     
 }
 .result__text {
@@ -31,8 +50,9 @@ body {
     border-radius: 75px;
     height: 150px;
     width: 150px;
-    background-color:hsl(241, 81%, 54%);
-    box-shadow:1px 1px 2px hsla(256, 72%, 46%, 0);
+    background: linear-gradient(to bottom,
+    var(--Violet-blue-circle),
+    var(--Persian-blue-circle));
 
 }
 .grade__text {
@@ -63,8 +83,7 @@ body {
 .summary__section {
     padding: 25px;
     display: grid;
-    box-shadow: 0px 0px 2px hsla(224, 30%, 27%, 0.3);
-    border-bottom-right-radius: 20px;
+    
 }
 .summary{
     display: flex;
@@ -158,15 +177,17 @@ body {
 }
 @media screen and (min-width:1440px)  {
     .result-summary {
+        margin-top:200px;
+    }
+    .container {
         display: grid;
         grid-template-columns: 350px 400px;
         justify-content: center;
-        margin-top: 200px;
-       
-    
     }
     .result { 
-        background-color: hsl(234, 85%, 45%);
+        background: linear-gradient(to bottom,
+    var(--Light-slate-blue-background),
+    var(--Light-royal-blue-background));
         height: 400px;
         border-radius: 20px;
         display: flex;
