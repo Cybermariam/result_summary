@@ -1,76 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
 
   <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,800;1,500;1,700&family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css" type="text/css">
-  
-  <title>Frontend Mentor | Results summary component</title>
+  <link rel="stylesheet" href="styles.css" type="text/css">
+    <title>Frontend Mentor | Results summary component</title>
 </head>
-<b>
+<body>
+    <div class="result__summary">
+        <div class="result__summary-container">
+            <section class="result">
+                <h3 class="result__title">Your Result</h3>
+                <div class="total__score">
+                   <h1 class="result__score">76</h1>
+                   <p class="result__totalgrade">of 100</p>
+                </div>
+                <div class="result__reward"> <b> Great</b></div>
+                <div class="result__remark">  You scored higher than 65% of the people who have taken these tests.</div>
 
-  <div class="result-summary">
-    <div class="container">
-      <div class="result">
-        <div class="result__text">Your Result</div>
-        <div class="result__grade">
-          <div class="grade__text"> 76 <br></div>
-        <span class="grade__percentage">of 100</span>
-          </div>
+            </section>
 
-        <div class="result__collocation">Great</div>
-        <div class="result__remark">  You scored higher than 65% of the people who have taken these tests.</div>
-      </div>
+            <section class="summary__section">
+                <h3>Summary</h3>
 
-      <div class="summary__section">
-        <div class="summary__text">Summary</div>
+                    <!--Reaction summary-->
+                    
+                        <div class="summary summary__container--reaction">
+                            <div class="summary__container">
+                                <img class="reaction__image" src="./assets/images/icon-reaction.svg" alt="reaction-image">
+                                <div class="reaction__text"> Reaction</div>
+                            </div>
+                            <div class="reaction__grade"> <b>80</b> 
+                            <span class="summary__percentage">/ 100</span></div>
+                        </div>
 
-        <div class="summary summary__container--reaction">
-          <div class="summary__container">
-            <img class="reaction__image" src="./assets/images/icon-reaction.svg" alt="reaction-image">
-            <div class="reaction__text"> Reaction</div>
-          </div>
-          <div class="reaction__grade"> 80 
-            <span class="summary__percentage">/ 100</span></div>
+
+                        <div class="summary summary__container--memory">
+                            <div class="summary__container">
+                            <img class="memory__image" src="./assets/images/icon-memory.svg" alt="memory-image">
+                            <div class="memory__text">Memory</div>
+                            </div>
+                            <div class="memory__grade"> <b>92</b>
+                            <span class="summary__percentage">/ 100</span></div>
+                        </div>
+                
+                        <div class="summary summary__container--verbal ">
+                            <div class="summary__container">
+                            <img class="verbal__image" src="./assets/images/icon-verbal.svg" alt="verbal-image">
+                            <div class="verbal__text">Verbal</div>
+                            </div>
+                            <div class="verbal__grade"> <b>61</b>
+                            <span class="summary__percentage">/ 100</span>
+                            </div>
+                        </div>
+                
+                        <div class="summary summary__container--visual ">
+                            <div class="summary__container">
+                            <img class="visual__image" src="./assets/images/icon-visual.svg" alt="visual-image">
+                            <div class="visual__text">Visual</div>
+                            </div>
+                            <div class="visual__grade"> <b>72 </b> <span class="summary__percentage">/ 100</span></div>
+                        </div>
+                        
+                        <button class="button button--primary">Continue</button>
+                    
+                </div>
+            </section>
+        
         </div>
 
-        <div class="summary summary__container--memory">
-          <div class="summary__container">
-            <img class="memory__image" src="./assets/images/icon-memory.svg" alt="memory-image">
-            <div class="memory__text">Memory</div>
-          </div>
-          <div class="memory__grade">92 
-            <span class="summary__percentage">/ 100</span></div>
-        </div>
-
-        <div class="summary summary__container--verbal ">
-          <div class="summary__container">
-            <img class="verbal__image" src="./assets/images/icon-verbal.svg" alt="verbal-image">
-            <div class="verbal__text">Verbal</div>
-          </div>
-          <div class="verbal__grade">61 
-            <span class="summary__percentage">/ 100</span>
-          </div>
-        </div>
-
-        <div class="summary summary__container--visual ">
-          <div class="summary__container">
-            <img class="visual__image" src="./assets/images/icon-visual.svg" alt="visual-image">
-            <div class="visual__text">Visual</div>
-          </div>
-          <div class="visual__grade">72 <span class="summary__percentage">/ 100</span></div>
-        </div>
-
-        <button class="button button--primary">Continue</button>
-      </div>
     </div>
-
-  </div>
-
 </body>
 </html>
